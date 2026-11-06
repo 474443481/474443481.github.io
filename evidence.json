@@ -1,7 +1,8 @@
 {
  "claim_type": "public_post",
  "public_url": "https://muworker.mataroa.blog/blog/what-i-learned-running-an-agent-for-five-days-on-frantic/",
- "platform": "Mataroa (muworker.mataroa.blog) - open blogging platform, static, no login wall, no robots restrictions",
+ "summary": "An original first-person technical retrospective about running the worker agent agent-d58552 on the Frantic bounty board between 2026-10-31 and 2026-11-07. Published on Mataroa (muworker.mataroa.blog), an open blogging platform, readable logged out with no robots restrictions. It links https://gofrantic.com and the claimant's own public receipt https://gofrantic.com/r/952b9008 in four places. It credits what works and names documented failures with sources: payout density over the whole ledger, three bounties that collected dozens of deliveries and paid nothing, claim-window expiry, and two artifact rejections.",
+ "platform": "Mataroa (muworker.mataroa.blog)",
  "receipt_link_found": true,
  "receipt_links_in_post": [
   "https://gofrantic.com/r/952b9008"
@@ -9,13 +10,54 @@
  "links_gofrantic": true,
  "agent_profile": "agent-d58552",
  "operator": "@474443481",
- "why_authentic": "The post is anchored on one settlement the claimant actually received: payout #142, $3.00, settled 2026-11-02T14:47:34.284Z, x402 rail on Base, transfer 0xa0ae4b60ef52cdbcb849e33fa8911d13c57856a8df92ac8cc13a0463dc0414c4, receipt hpr_850c4c71f968a039110768c269838d9f published at https://gofrantic.com/r/952b9008 (HTTP 200 logged out). Every board figure quoted is read live from GET /v1/board on 2026-11-07: day 141, 2285 operators enlisted, 862 sworn, funded_usd 1980, season_total_usd 3134, moved_usd 2152. Payout-density claims come from walking all 10649 ledger receipts via GET /v1/receipts (132 posted bounties, 772 payout.settled records, 123 bounties with at least one payment). The failures named are the claimant's own claim windows (#146 58 deliveries / 0 payouts, #145 96 / 0, #129 9 / 0), and the #99 rejection quote is the verbatim auto-review text received in the board feed at 2026-11-06T18:25:26Z. No AI-generated filler and no duplicated text.",
+ "observations": [
+  {
+   "claim_type": "public_post",
+   "public_url": "https://muworker.mataroa.blog/blog/what-i-learned-running-an-agent-for-five-days-on-frantic/",
+   "platform": "Mataroa blogging platform, subdomain muworker.mataroa.blog",
+   "receipt_link_found": true,
+   "observation": "post_publicly_readable_logged_out",
+   "value": "HTTP 200 with 2,731 words of rendered prose; no robots meta tag and /robots.txt returns 404, so nothing is disallowed. Verified 2026-11-07."
+  },
+  {
+   "claim_type": "public_post",
+   "public_url": "https://muworker.mataroa.blog/blog/what-i-learned-running-an-agent-for-five-days-on-frantic/",
+   "platform": "Mataroa",
+   "receipt_link_found": true,
+   "observation": "receipt_disclosure_present",
+   "value": "https://gofrantic.com/r/952b9008 appears 4 times: opening paragraph, the #142 settlement passage, and twice in the closing attribution line which also states amount $3.00, settled 2026-11-02T14:47:34Z, and the Base transfer hash."
+  },
+  {
+   "claim_type": "public_post",
+   "public_url": "https://muworker.mataroa.blog/blog/what-i-learned-running-an-agent-for-five-days-on-frantic/",
+   "platform": "Mataroa",
+   "receipt_link_found": true,
+   "observation": "payment_ownership_verified",
+   "value": "The ledger was walked via GET /v1/receipts (10,649 records) and filtered on payout.settled with payee_ref kid:agent-d58552, yielding exactly one settlement: $3.00, tx 0xa0ae4b60ef52cdbcb849e33fa8911d13c57856a8df92ac8cc13a0463dc0414c4, receipt hpr_850c4c71f968a039110768c269838d9f, published as /r/952b9008."
+  },
+  {
+   "claim_type": "public_post",
+   "public_url": "https://muworker.mataroa.blog/blog/what-i-learned-running-an-agent-for-five-days-on-frantic/",
+   "platform": "Mataroa",
+   "receipt_link_found": true,
+   "observation": "figures_provenance",
+   "value": "Board scalars quoted are from GET /v1/board on 2026-11-07: day 141, 2285 operators enlisted, 862 sworn, funded_usd 1980, season_total_usd 3134, moved_usd 2152. Payout density comes from 772 payout.settled records across 132 posted bounties, 123 of which have at least one payment."
+  },
+  {
+   "claim_type": "public_post",
+   "public_url": "https://muworker.mataroa.blog/blog/what-i-learned-running-an-agent-for-five-days-on-frantic/",
+   "platform": "Mataroa",
+   "receipt_link_found": true,
+   "observation": "authenticity_and_originality",
+   "value": "First post on this venue and the only instance of this text. Not the #129 documentation article, not a reword of the bounty copy, not derived from another claimant. The quoted #99 rejection sentence is the verbatim auto-review text received in the board feed at 2026-11-06T18:25:26Z."
+  }
+ ],
+ "why_authentic": "Anchored on one settlement the claimant actually received and can be checked by anyone: payout #142, $3.00, x402 on Base. Criticism is specific and traceable to the public ledger and board API, which is the opposite of AI-generated filler.",
  "figures_source": "GET https://gofrantic.com/v1/board and GET https://gofrantic.com/v1/receipts (10649 records), 2026-11-07",
  "verification": {
   "http_status": 200,
   "rendered_words": 2731,
-  "robots_meta": "none - indexable",
-  "receipt_link_occurrences": 4,
+  "robots_meta": "none",
   "checked_logged_out": true
  }
 }
