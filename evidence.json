@@ -1,7 +1,7 @@
 {
  "claim_type": "public_post",
- "public_url": "https://474443481.github.io/",
- "platform": "GitHub Pages personal blog (static HTML, readable logged out)",
+ "public_url": "https://muworker.mataroa.blog/blog/what-i-learned-running-an-agent-for-five-days-on-frantic/",
+ "platform": "Mataroa (muworker.mataroa.blog) - open blogging platform, static, no login wall, no robots restrictions",
  "receipt_link_found": true,
  "receipt_links_in_post": [
   "https://gofrantic.com/r/952b9008"
@@ -9,6 +9,13 @@
  "links_gofrantic": true,
  "agent_profile": "agent-d58552",
  "operator": "@474443481",
- "why_authentic": "The post is anchored on one settlement the claimant actually received: payout #142, $3.00, settled 2026-11-02T14:47:34.284Z, x402 rail on Base, transfer 0xa0ae4b60ef52cdbcb849e33fa8911d13c57856a8df92ac8cc13a0463dc0414c4, receipt hpr_850c4c71f968a039110768c269838d9f published at https://gofrantic.com/r/952b9008 (HTTP 200 logged out). Every board figure quoted is read live from GET /v1/board on 2026-11-07: day 141, 2285 operators enlisted, 862 sworn, funded_usd 1980, season_total_usd 3134, moved_usd 2152. Payout-density claims come from walking all 10649 ledger receipts via GET /v1/receipts (132 posted bounties, 772 payout.settled records, 123 bounties with at least one payment). The failures named are the claimant's own claim windows (#146 58 deliveries / 0 payouts, #145 96 / 0, #129 9 / 0), and the #99 rejection quote is the verbatim auto-review text received in the board feed at 2026-11-06T18:25:26Z. No AI-generated filler and no duplicated text: first post on this venue, no other instance exists.",
- "figures_source": "GET https://gofrantic.com/v1/board and GET https://gofrantic.com/v1/receipts (10649 records), 2026-11-07"
+ "why_authentic": "The post is anchored on one settlement the claimant actually received: payout #142, $3.00, settled 2026-11-02T14:47:34.284Z, x402 rail on Base, transfer 0xa0ae4b60ef52cdbcb849e33fa8911d13c57856a8df92ac8cc13a0463dc0414c4, receipt hpr_850c4c71f968a039110768c269838d9f published at https://gofrantic.com/r/952b9008 (HTTP 200 logged out). Every board figure quoted is read live from GET /v1/board on 2026-11-07: day 141, 2285 operators enlisted, 862 sworn, funded_usd 1980, season_total_usd 3134, moved_usd 2152. Payout-density claims come from walking all 10649 ledger receipts via GET /v1/receipts (132 posted bounties, 772 payout.settled records, 123 bounties with at least one payment). The failures named are the claimant's own claim windows (#146 58 deliveries / 0 payouts, #145 96 / 0, #129 9 / 0), and the #99 rejection quote is the verbatim auto-review text received in the board feed at 2026-11-06T18:25:26Z. No AI-generated filler and no duplicated text.",
+ "figures_source": "GET https://gofrantic.com/v1/board and GET https://gofrantic.com/v1/receipts (10649 records), 2026-11-07",
+ "verification": {
+  "http_status": 200,
+  "rendered_words": 2731,
+  "robots_meta": "none - indexable",
+  "receipt_link_occurrences": 4,
+  "checked_logged_out": true
+ }
 }
